@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <style>
+      * {box-sizing: border-box;}
+
+        img{
+            object-fit: contain;
+            display: block;
+        }
+
+        img:hover {
+          color: black;
+        }
+
+        p:hover {
+          color: black;
+        }
+
+        .image-stack {
+          display: grid;
+          position: relative;
+          grid-template-columns: repeat(12, 1fr);
+        }
+
+        .image-stack__item--top--hospital {
+          padding: 130px;
+          margin-left: 110px;
+        }
+
+        .image-stack__item--top--grocery {
+          padding: 70px;
+          margin-left: -40px;
+        }
+
+        .image-stack__item--top--school {
+          padding: 100px;
+          margin-left: 215px;
+        }
+
+        .image-stack__item--top--cafe {
+          padding: 220px;
+          margin-left: -179px;
+        }
+
+        .image-stack__item--top--museum {
+          padding: 220px;
+          margin-left: -420px;
+        }
+
+        a {
+          background-color: rgba(197, 9, 230, 0.44);
+          color: white;
+          padding: 0.2em 0.5em;
+          position: relative;
+          text-decoration: none;
+          float: none;
+          display: block;
+        }
+
+        a:visited {
+          color: rgb(255, 255, 255);
+          background-color: transparent;
+          text-decoration: none;
+        }
+
+        a:hover {
+          background-color: rgba(230, 9, 127, 0.167);
+          color: rgb(255, 7, 218);
+          padding: 0.2em 0.5em;
+          position: relative;
+          text-decoration: none;
+          float: none;
+          display: block;
+        }
+
+    </style>
+  </head>
+  <body background="images/truemap3.PNG">
+    <main>
+      <div class="image-stack">
+          <div class="image-stack__item image-stack__item--top--hospital">
+            <a href="hospital/index.html">
+              <p>Аурухана</p>
+            </a> 
+          </div>
+          <div class="image-stack__item image-stack__item--top--grocery">
+            <a href="store/index.html">
+              <p>Дүкен</p>
+            </a> 
+          </div>
+          <div class="image-stack__item image-stack__item--top--school">
+            <a href="school/index.html">
+              <p>Мектеп</p>
+            </a> 
+          </div>
+          <div class="image-stack__item image-stack__item--top--cafe">
+            <a href="cafe/index.html">
+              <p>Кафе</p>
+            </a> 
+          </div>
+          <div class="image-stack__item image-stack__item--top--museum">
+            <a href="museum/index.html">
+              <p>Мұражай</p>
+            </a> 
+          </div>
+      </div>
+    </main>
+  </body>
+</html>
